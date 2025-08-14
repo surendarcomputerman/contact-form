@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Karla:ital,wght@0,200..800;1,200..800&family=Libre+Franklin:ital@0;1&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+}
+
+body {
+    background-color: #E0F1E7;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.success-container {
+    background-color: hsl(187, 24%, 22%);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+}
+
+.success-container p {
+    font-size: 15px;
+}
+
+.forms-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.forms-container p {
+    font-size: 13px;
+}
+
+.form-group-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.form-group-1 input {
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    margin: 0 10px;
+    border: 1px solid #C6CDCD;
+    outline: none;
+}
+
+.form-group-1 label {
+    width: 240px;
+    border-radius: 10px;
+    text-align: start;
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: #585c5c;
+}
+
+.form-group-1 .name-con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-group-1 .las-con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-group-2 {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-group-2 input {
+    width: 520px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #C6CDCD;
+}
+
+.form-group-2 label {
+    width: 510px;
+    text-align: start;
+    font-size: 15px;
+    color: #585c5c;
+    margin-bottom: 5px;
+}
+
+.form-group-3 .in-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group-3 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-group-3 .query {
+    font-size: 15px;
+    color: #585c5c;
+    margin-bottom: 5px;
+    width: 510px;
+}
+
+.form-group-3 .in-form .radio-1 {
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    margin: 0 10px;
+    border: 1px solid #C6CDCD;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+    color: #585c5c;
+    cursor: pointer;
+}
+
+.form-group-3 .in-form .radio-1 label {
+    cursor: pointer;
+}
+
+.form-group-3 .in-form .radio-2 label {
+    cursor: pointer;
+}
+
+.radio-1 input[type="radio"]:checked+label {
+    color: green;
+
+}
+
+.radio-1:has(input[type="radio"]:checked) {
+    background-color: #e8f5e8;
+    border-color: green;
+    color: green;
+}
+
+.radio-1 input[type="radio"]:checked {
+    accent-color: green;
+}
+
+.radio-2 input[type="radio"]:checked+label {
+    color: green;
+}
+
+.radio-2:has(input[type="radio"]:checked) {
+    background-color: #e8f5e8;
+    border-color: green;
+    color: green;
+}
+
+.radio-2 input[type="radio"]:checked {
+    accent-color: green;
+}
+
+.form-group-3 .in-form .radio-2 {
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    margin: 0 10px;
+    border: 1px solid #C6CDCD;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+    color: #585c5c;
+    cursor: pointer;
+}
+
+.form-group-4 {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-group-4 input {
+    width: 520px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid #C6CDCD;
+    outline: none;
+}
+
+.form-group-4 label {
+    width: 510px;
+    text-align: start;
+    font-size: 15px;
+    color: #585c5c;
+    margin-bottom: 5px;
+}
+
+.form-group-5 {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 15px;
+    gap: 15px;
+}
+
+.form-group-5 input[type="checkbox"] {
+    color: green;
+    background-color: green;
+}
+
+.form-group-5 label {
+    cursor: pointer;
+}
+
+.submit-btn {
+    width: 520px;
+
+    margin-top: 20px;
+    border: none;
+}
+
+.submit-btn button {
+    color: white;
+    margin-left: 10px;
+    background-color: hsl(169, 82%, 27%);
+    cursor: pointer;
+    border: none;
+    width: 520px;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.form-group-1 .name-con p {
+    width: 240px;
+    color: red;
+    margin-top: 5px;
+}
+
+.form-group-1 .las-con p {
+    width: 240px;
+    color: red;
+    margin-top: 5px;
+}
+
+.form-group-2 p {
+    width: 510px;
+    color: red;
+    margin-top: 5px;
+}
+
+.rrr {
+    margin-left: 15px;
+    margin-top: 5px;
+    color: red;
+}
+
+.form-group-4 p {
+    width: 510px;
+    color: red;
+    margin-top: 5px;
+}
+
+.rrr2 {
+    color: red;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+
+@media screen and (max-width : 500px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 150vh;
+    }
+    .success-container {
+        background-color: hsl(187, 24%, 22%);
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        display: none;
+        width: 300px;
+    }
+
+    .success-container p {
+        font-size: 15px;
+    }
+
+    .forms-container {
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        width: 300px;
+    }
+
+    .forms-container p {
+        font-size: 13px;
+    }
+
+    .form-group-1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .form-group-1 input {
+        width: 250px;
+        height: 35px;
+        border-radius: 5px;
+        margin: 0 10px;
+        border: 1px solid #C6CDCD;
+        outline: none;
+    }
+
+    .form-group-1 label {
+        width: 240px;
+        border-radius: 10px;
+        text-align: start;
+        margin-bottom: 5px;
+        font-size: 15px;
+        color: #585c5c;
+    }
+
+    .form-group-1 .name-con {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .form-group-1 .las-con {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .form-group-2 {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .form-group-2 input {
+        width: 250px;
+        height: 35px;
+        border-radius: 5px;
+        border: 1px solid #C6CDCD;
+    }
+
+    .form-group-2 label {
+        width: 250px;
+        text-align: start;
+        font-size: 15px;
+        color: #585c5c;
+        margin-bottom: 5px;
+    }
+
+    .form-group-3 .in-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-group-3 {
+        margin-top: 20px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .form-group-3 .query {
+        font-size: 15px;
+        color: #585c5c;
+        margin-bottom: 5px;
+        width: 250px;
+    }
+
+    .form-group-3 .in-form .radio-1 {
+        width: 250px;
+        height: 35px;
+        border-radius: 5px;
+        margin: 0 10px;
+        border: 1px solid #C6CDCD;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 10px;
+        padding-left: 20px;
+        color: #585c5c;
+        cursor: pointer;
+    }
+
+    .form-group-3 .in-form .radio-1 label {
+        cursor: pointer;
+    }
+
+    .form-group-3 .in-form .radio-2 label {
+        cursor: pointer;
+    }
+
+    .radio-1 input[type="radio"]:checked+label {
+        color: green;
+
+    }
+
+    .radio-1:has(input[type="radio"]:checked) {
+        background-color: #e8f5e8;
+        border-color: green;
+        color: green;
+    }
+
+    .radio-1 input[type="radio"]:checked {
+        accent-color: green;
+    }
+
+    .radio-2 input[type="radio"]:checked+label {
+        color: green;
+    }
+
+    .radio-2:has(input[type="radio"]:checked) {
+        background-color: #e8f5e8;
+        border-color: green;
+        color: green;
+    }
+
+    .radio-2 input[type="radio"]:checked {
+        accent-color: green;
+    }
+
+    .form-group-3 .in-form .radio-2 {
+        width: 250px;
+        height: 35px;
+        border-radius: 5px;
+        margin: 0 10px;
+        border: 1px solid #C6CDCD;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 10px;
+        padding-left: 20px;
+        color: #585c5c;
+        cursor: pointer;
+    }
+
+    .form-group-4 {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .form-group-4 input {
+        width: 250px;
+        height: 100px;
+        border-radius: 5px;
+        border: 1px solid #C6CDCD;
+        outline: none;
+    }
+
+    .form-group-4 label {
+        width: 250px;
+        text-align: start;
+        font-size: 15px;
+        color: #585c5c;
+        margin-bottom: 5px;
+    }
+
+    .form-group-5 {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 15px;
+        gap: 15px;
+        margin-left: 20px;
+    }
+
+    .form-group-5 label {
+        cursor: pointer;
+        width: 230px;
+        font-size: 15px;
+    }
+
+    .submit-btn {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .submit-btn button {
+        width: 250px;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+        background-color: hsl(169, 82%, 27%);
+    }
+
+    .form-group-1 .name-con p {
+
+        width: 240px;
+        color: red;
+        margin-top: 5px;
+    }
+
+    .form-group-1 .las-con p {
+        width: 240px;
+        color: red;
+        margin-top: 5px;
+    }
+
+    .form-group-2 p {
+        width: 510px;
+        color: red;
+        margin-top: 5px;
+    }
+
+    .rrr {
+        margin-left: 10px;
+        margin-top: 5px;
+        color: red;
+    }
+
+    .form-group-4 p {
+        width: 510px;
+        color: red;
+        margin-top: 5px;
+    }
+
+    .rrr2 {
+        color: red;
+        margin-top: 5px;
+        width: 250px;
+    }
+
+    .err-email {
+        margin-left: 260px;
+    }
+}
